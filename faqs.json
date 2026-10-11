@@ -1,0 +1,128 @@
+
+[
+  {
+    "question": "What is CodeAlpha?",
+    "answer": "CodeAlpha is an organization that provides internship opportunities and practical project experience for students.",
+    "category": "General"
+  },
+  {
+    "question": "How can I apply for an internship?",
+    "answer": "Visit the organization's official website or internship application portal, review the eligibility requirements, and submit your application.",
+    "category": "Internship"
+  },
+  {
+    "question": "What is an internship?",
+    "answer": "An internship is a temporary learning opportunity that helps students gain practical experience in a professional field.",
+    "category": "Internship"
+  },
+  {
+    "question": "How do I submit my project?",
+    "answer": "Follow the submission instructions provided by your internship coordinator. They may ask for a GitHub repository link, project report, or demo.",
+    "category": "Internship"
+  },
+  {
+    "question": "What is GitHub?",
+    "answer": "GitHub is a platform for hosting Git repositories, collaborating on code, tracking changes, and sharing software projects.",
+    "category": "Technology"
+  },
+  {
+    "question": "How do I create a GitHub repository?",
+    "answer": "Sign in to GitHub, select New repository, enter a repository name, choose its visibility, and create the repository.",
+    "category": "Technology"
+  },
+  {
+    "question": "What is Python?",
+    "answer": "Python is a high-level programming language used in web development, automation, data science, machine learning, and artificial intelligence.",
+    "category": "Technology"
+  },
+  {
+    "question": "What is artificial intelligence?",
+    "answer": "Artificial intelligence is a field of computing focused on building systems that perform tasks such as language understanding, prediction, and decision support.",
+    "category": "Technology"
+  },
+  {
+    "question": "What is machine learning?",
+    "answer": "Machine learning is a branch of AI that enables systems to learn patterns from data and make predictions or decisions.",
+    "category": "Technology"
+  },
+  {
+    "question": "What is NLP?",
+    "answer": "Natural Language Processing, or NLP, enables computers to process and analyze human language, including text classification and question matching.",
+    "category": "Technology"
+  },
+  {
+    "question": "What is Flask?",
+    "answer": "Flask is a lightweight Python web framework used to build web applications and APIs.",
+    "category": "Technology"
+  },
+  {
+    "question": "What is scikit-learn?",
+    "answer": "Scikit-learn is a Python machine-learning library that provides tools for text vectorization, classification, clustering, model evaluation, and more.",
+    "category": "Technology"
+  },
+  {
+    "question": "What is TF-IDF?",
+    "answer": "TF-IDF stands for Term Frequency–Inverse Document Frequency. It represents text numerically by considering how important words are within documents and across a collection.",
+    "category": "Technology"
+  },
+  {
+    "question": "What is cosine similarity?",
+    "answer": "Cosine similarity measures how similar two vectors are by comparing the angle between them. It is commonly used to compare text representations.",
+    "category": "Technology"
+  },
+  {
+    "question": "What is a chatbot?",
+    "answer": "A chatbot is a software application that interacts with users through conversation and provides responses to questions or requests.",
+    "category": "Technology"
+  },
+  {
+    "question": "What is a resume?",
+    "answer": "A resume is a concise document summarizing your education, skills, projects, experience, and achievements for job or internship applications.",
+    "category": "Career"
+  },
+  {
+    "question": "How can I improve my resume?",
+    "answer": "Use a clear layout, relevant technical skills, measurable project achievements, accurate information, and keywords that match the role. Keep formatting consistent.",
+    "category": "Career"
+  },
+  {
+    "question": "How can I prepare for an interview?",
+    "answer": "Review core concepts, practice explaining your projects, solve coding questions, research the organization, and prepare examples of how you approach problems.",
+    "category": "Career"
+  },
+  {
+    "question": "What is HTML?",
+    "answer": "HTML stands for HyperText Markup Language. It structures content on web pages using elements such as headings, paragraphs, links, and forms.",
+    "category": "Technology"
+  },
+  {
+    "question": "What is CSS?",
+    "answer": "CSS stands for Cascading Style Sheets. It controls the visual presentation of web pages, including colors, layouts, spacing, and responsive design.",
+    "category": "Technology"
+  },
+  {
+    "question": "What is JavaScript?",
+    "answer": "JavaScript is a programming language used to add interactivity to websites and build applications for browsers and servers.",
+    "category": "Technology"
+  },
+  {
+    "question": "What is an API?",
+    "answer": "An API is an interface that allows software components to communicate and exchange data according to defined rules.",
+    "category": "Technology"
+  },
+  {
+    "question": "How do I fix a Python module not found error?",
+    "answer": "Activate the correct virtual environment, install the missing package using python -m pip install package-name, and verify that your editor uses the same Python interpreter.",
+    "category": "Troubleshooting"
+  },
+  {
+    "question": "How do I run a Flask application?",
+    "answer": "Activate your virtual environment, install the required dependencies, navigate to the folder containing app.py, and run python app.py.",
+    "category": "Troubleshooting"
+  },
+  {
+    "question": "How can I contact support?",
+    "answer": "Check the organization's official website for its verified support email address or contact form. This sample chatbot does not have a live support connection.",
+    "category": "General"
+  }
+]

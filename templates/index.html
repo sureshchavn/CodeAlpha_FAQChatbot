@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101124">
+  <meta name="description" content="An NLP-powered FAQ chatbot using TF-IDF and cosine similarity.">
+  <title>FAQly — Smart FAQ Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a href="/" class="brand">
+        <span class="brand-icon">✦</span>
+        <span>FAQly<span class="brand-dot">.</span></span>
+      </a>
+
+      <div class="sidebar-label">YOUR ASSISTANT</div>
+      <button class="new-chat" id="newChatBtn">＋ New conversation</button>
+
+      <div class="sidebar-label category-heading">POPULAR QUESTIONS</div>
+      <div id="suggestedQuestions" class="suggested-questions">
+        <button class="suggestion" data-question="What is a chatbot?">What is a chatbot?</button>
+        <button class="suggestion" data-question="What is Python?">What is Python?</button>
+        <button class="suggestion" data-question="How can I prepare for an interview?">Interview preparation</button>
+        <button class="suggestion" data-question="What is machine learning?">Machine learning</button>
+        <button class="suggestion" data-question="How do I submit my project?">Project submission</button>
+      </div>
+
+      <div class="sidebar-footer">
+        <span class="status-dot"></span>
+        <span>Local FAQ engine</span>
+        <span class="offline-tag">API</span>
+      </div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="topbar">
+        <div class="assistant-identity">
+          <div class="avatar">✦</div>
+          <div>
+            <h2>FAQ Assistant</h2>
+            <p><span class="status-dot"></span> Ready to help</p>
+          </div>
+        </div>
+        <button id="themeBtn" class="icon-button" aria-label="Toggle theme" title="Toggle theme">☼</button>
+      </header>
+
+      <section class="chat-area" id="chatArea" aria-live="polite">
+        <div class="welcome" id="welcome">
+          <div class="welcome-symbol">✦</div>
+          <div class="eyebrow">YOUR SMART FAQ ASSISTANT</div>
+          <h1>Questions?<br><span>Let's find answers.</span></h1>
+          <p>Ask me about technology, internships, careers, and programming. I'll find the closest matching answer from my FAQ knowledge base.</p>
+
+          <div class="quick-grid">
+            <button class="quick-card" data-question="What is artificial intelligence?">
+              <span class="quick-icon">✧</span>
+              <strong>Artificial Intelligence</strong>
+              <span>Explore AI basics</span>
+              <span class="card-arrow">↗</span>
+            </button>
+            <button class="quick-card" data-question="How can I improve my resume?">
+              <span class="quick-icon">▤</span>
+              <strong>Career & Resume</strong>
+              <span>Prepare for opportunities</span>
+              <span class="card-arrow">↗</span>
+            </button>
+            <button class="quick-card" data-question="What is Flask?">
+              <span class="quick-icon">⌘</span>
+              <strong>Web Development</strong>
+              <span>Learn developer concepts</span>
+              <span class="card-arrow">↗</span>
+            </button>
+            <button class="quick-card" data-question="What is TF-IDF?">
+              <span class="quick-icon">◎</span>
+              <strong>NLP & Machine Learning</strong>
+              <span>Understand text matching</span>
+              <span class="card-arrow">↗</span>
+            </button>
+          </div>
+        </div>
+
+        <div id="messages" class="messages"></div>
+      </section>
+
+      <div class="composer-wrap">
+        <div id="errorMessage" class="error-message" role="alert"></div>
+        <form id="chatForm" class="composer">
+          <textarea id="messageInput" rows="1" maxlength="500"
+            placeholder="Ask a question... (e.g. What is Python?)"
+            aria-label="Your question"></textarea>
+          <div class="composer-bottom">
+            <span class="input-hint">Powered by TF-IDF + cosine similarity</span>
+            <div class="composer-actions">
+              <span id="charCount">0/500</span>
+              <button type="submit" id="sendBtn" aria-label="Send question">
+                <span>Ask</span><span>↗</span>
+              </button>
+            </div>
+          </div>
+        </form>
+        <p class="disclaimer">FAQly can make incorrect matches. Verify important information independently.</p>
+      </div>
+    </main>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
